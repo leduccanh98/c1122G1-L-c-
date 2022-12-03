@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .option {
+        width: 300px;
+        height: 30px;
+        font-size: 20px;
+
+    }
+
+    .dollars {
+        width: 50px;
+        height: 20px;
+    }
+
+    .cents {
+        width: 20px;
+        height: 20px;
+    }
+
+    #cents {
+        margin-left: 15px;
+    }
+
+    #dollars {
+        margin-left: 15px;
+    }
+
+    .textarea {
+        width: 1000px;
+        height: 100px;
+    }
+    #customers{
+        border-collapse: collapse;
+        width:100%;
+    }
+    #customers th{
+        background-color: aliceblue;
+        border:1px solid black;
+        width: 10px;
+        height:40px;
+    }
+    #customers td{
+        border:1px solid black;
+        width: 10px;
+        height:40px;
+    }
+</style>
+<body>
+<h1>
+    <strong>
+        Market Research Survey
+    </strong>
+    <h3>
+        Please take a few moments to complete this satisfaction survey.
+    </h3>
+    <hr>
+
+    <h4>What is your age range?</h4>
+
+    <select class="option">
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-50">35-50</option>
+        <option value="50+">50+</option>
+    </select>
+
+    <h4>What is your yearly income range?</h4>
+
+    <select class="option">
+        <option value="$0-$25,000">$0-$25,000</option>
+        <option value="$25,001-$50,000">$25,000-$50,000</option>
+        <option value="$50,001-$75,000">$50,000-$75,000"</option>
+        <option value="$100,000">"$100,000"</option>
+    </select>
+    <h4>
+        Gender Identity
+    </h4>
+    <input type="radio">Male <br>
+    <input type="radio">Female<br>
+    <input type="radio">Nonbinary<br>
+    <input type="radio">Other<br>
+    <input typ="text">
+    <h4>
+        Which of the following products have your purchased in the last 2 months. Please check all that apply.
+    </h4>
+    <input type="checkbox">Product 1<br>
+    <input type="checkbox">Product 2<br>
+    <input type="checkbox">Product 3
+    <h4>
+        How often would you use our new product?
+    </h4>
+    <input type="radio">Daily <br>
+    <input type="radio">Weekly<br>
+    <input type="radio">Monthly
+    <h4>
+        What would you pay for the new product?
+    </h4>
+    $ <input class="dollars" type="text"> . <input class="cents" type="text">
+    <br>
+    <span id="dollars">Dollars</span>
+    <span id="cents">Cents</span>
+    <h4>
+        What features would you like to see in the new product.
+    </h4>
+    <input class="textarea" type="textarea">
+    <br>
+    <br>
+    <br>
+    <table id="customers">
+        <tr>
+            <th></th>
+            <th>Strongly Dissagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Dissagree</th>
+        </tr>
+        <tr>
+            <td>Our products are priced fairly.</td>
+            <td> <input type="radio">1</td>
+            <td><input type="radio">2</td>
+            <td><input type="radio">3</td>
+            <td><input type="radio">4</td>
+        </tr>
+        <tr style="background-color: aliceblue">
+            <td>Our products are high quality.</td>
+            <td><input type="radio">1</td>
+            <td><input type="radio">2</td>
+            <td><input type="radio">3</td>
+            <td><input type="radio">4</td>
+        </tr>
+        <tr>
+            <td>You wold recommend our product to a freind or coworker.</td>
+            <td><input type="radio">1</td>
+            <td><input type="radio">2</td>
+            <td><input type="radio">3</td>
+            <td><input type="radio">4</td>
+        <tr>
+
+    </table>
+    <br>
+    <td>
+        <input type="submit" value="Submit">
+    </td>
+</body>
+</html>
